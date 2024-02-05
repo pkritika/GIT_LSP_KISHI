@@ -22,9 +22,14 @@ public class WordCount {
 //            Map<String, Integer> valueMap = new HashMap<>();
               Map<String, Integer> WordCountHelper = new LinkedHashMap<>(); // Creating a new linked hash map to store the key and value that is word and its count.
               // We are using Linked Hash Map because we need to print the word and count in specific order and Hash map does not guaranteed to be in any specific order
-           
+              line = br.readLine();
+              System.out.println("This is the given paragraph: ");
+             
+              
             while ((line = br.readLine()) != null) { // while it does not reach the end of the sentence
-//            	System.out.println(line);
+            	
+            	
+            	System.out.println(line);
             	String[] words = line.toLowerCase().split("\\s+"); // to convert all the words in lower case so that there design and Design can be considered same and 
             	// later splitting string into an array of words
             	
@@ -60,8 +65,10 @@ public class WordCount {
                 }
                 
             }
+            System.out.println("This is the output for the above paragraph: ");
             for (String key : WordCountHelper.keySet()) {  //returning a Set view of the keys contained in the map using .keyset
                 int value = WordCountHelper.get(key);
+                
                 System.out.println(key + " " + value);
             }
 
