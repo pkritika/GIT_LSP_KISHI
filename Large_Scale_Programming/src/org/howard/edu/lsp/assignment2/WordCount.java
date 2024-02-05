@@ -31,7 +31,7 @@ public class WordCount {
             	
 
                 for (String word : words) {
-                	if (word.contains("'")){
+                	if (word.contains("'")){ // for contraction words to separate the words with '
                 		String[] ContractionWords = word.split("'");
                 		for (String contraction : ContractionWords) {
                 			if (!contraction.matches("\\d+") && contraction.length() > 3) {
