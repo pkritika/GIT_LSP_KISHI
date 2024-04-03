@@ -151,7 +151,7 @@ public class IntegerSetTest {
 	    @Test
 	    @DisplayName("Test case for complement")
 	    void testComplement() {
-	    	 IntegerSet set2 = new IntegerSet();
+	    	
 	        set1.add(1);
 	        set1.add(2);
 	        set1.add(3);
