@@ -1,0 +1,84 @@
+Section 1: True/False. (15 pts., 1 pt. each)
+ F When designing a class, each class should be designed to have multiple goals so that your overall design can have fewer classes
+F Inheritance provides a mechanism by which changes to lower-level classes can be propagated to all super classes quickly
+F Design patterns are reusable libraries that can immediately be used in your code
+F Frameworks and design patterns are the same thing as far as designers are concerned
+T  Because of potential problems, developers must be aware of the effects of modifications in a superclass and in each of the subclasses that will inherit the modifications.
+T   Factory pattern can be combined with other patterns
+F   Creational design patterns are all about Class and Object composition. 
+F Structural design patterns are all about class instantiation
+T  Design patterns are a mechanism that enable developer to reuse code in their implementations.
+T  Behavioral design patterns are all about Class's objects communication
+F Information hiding makes program maintenance software development more difficult because other developer are not privy to an object’s implementation details.
+T In Java, the signature of a method is completely specified by the name of the method and the parameters that must be passed to the method.
+T  The relationship between two objects related by composition cannot be changed at runtime. 
+F When iterating a Java HashSet, you are guaranteed to retrieve objects stored in the same order they were inserted
+  T  Software designs are refactored to allow the creation of software that is easier to maintain and reuse.
+
+
+
+Section 2: Multiple Choice, answer each question. (20 pts., 1 pt. each)
+
+Which of the following option leads to the portability and security of Java?
+Bytecode is executed by JVM
+
+What is the role of mocking frameworks like Mockito in unit testing?
+They are used to create mock objects for unit tests.
+
+What is the primary purpose of unit testing?
+To validate that individual units of code work as expected.
+
+What is regression testing?
+Repeating previous tests to ensure existing functionality is not affected by changes.
+
+
+The root interface of the Java Collection framework hierarchy is
+Collection
+
+What interface in the Java Collections framework extends Map and represents a collection of key/value pairs where keys are ordered?
+TreeMap
+
+
+What interface in the Java Collections framework represents a last-in, first-out (Last In First Out) collection of objects?
+Stack
+
+Which of the following is true about design patterns? (Choose the best answer). 
+All of the above.
+
+You want all the clients using class A to use the same instance of class A when the class is instantiated, what should you do to achieve this goal?  
+Apply the Singleton pattern to class A 
+
+
+You have a class that accepts and returns values in British Imperial units (feet, miles, etc.), but you need to use metric units. The design pattern that would best solve your problem is:  
+Adapter
+
+
+Which of the following describes the Facade pattern correctly?
+This pattern hides the complexities of the system and providers an interface to the client using which the client can access the system. 
+Which of the following are concerned with communication between objects?
+Behavioral Design Patterns
+
+Which of the following is correct about Creational design patterns?
+These design patterns provide a way to create objects while hiding the creation logic, rather than instantiating objects directly using new operator.
+
+What is the role of the Template Method in the Template Method design pattern?
+To define the skeleton of an algorithm in the superclass but let subclasses override specific steps of the algorithm without changing its structure.
+Which of the following describes the Factory pattern correctly? 
+This pattern creates an object without exposing the creation logic to the client and refers to newly created objects using a common interface. 
+In the Command design pattern, what is the purpose of the Command interface?
+To encapsulate a request as an object, thereby allowing for parameterization of clients with different requests.
+
+What is the main advantage of the Strategy design pattern?
+It defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+
+This design pattern should be used to access the contents of a collection without exposing its internal representation, to support multiple traversals of a collection, and to provide a uniform interface for traversing different collections.  
+Iterator
+
+
+Which design pattern should you use when you want to provide a simple interface to a complex subsystem?  
+Facade
+
+What is the intent of the Adapter design pattern?
+To convert the interface of a class into another interface clients expect.
+
+
