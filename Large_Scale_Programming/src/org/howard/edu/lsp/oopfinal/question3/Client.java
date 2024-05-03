@@ -2,16 +2,14 @@ package org.howard.edu.lsp.oopfinal.question3;
 
 public class Client {
     public static void main(String[] args) {
-        ShapeFactory factory = new ShapeFactory();
+    	
+        Shape circle = ShapeFactory.createShape("Circle");
 
-        Shape circle = factory.createShape("Circle");
-        if (circle != null) {
-            circle.draw();
-        }
+        circle.draw();
 
-        Shape rectangle = factory.createShape("Rectangle");
-        if (rectangle != null) {
+
+        Shape rectangle = ShapeFactory.createShape("Rectangle");
             rectangle.draw();
-        }
     }
 }
+
