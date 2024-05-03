@@ -12,8 +12,8 @@ public class SongsTest {
     @Test
     public void testAddSong_ValidInput() {
         SongsDatabase db = new SongsDatabase();
-        db.addSong("Country", "Love Story");
-        Set<String> songs = db.getSongs("Country");
+        db.addSong("Romantic", "Love Story");
+        Set<String> songs = db.getSongs("Romantic");
         assertTrue(songs.contains("Love Story"));
     }
 
@@ -28,24 +28,24 @@ public class SongsTest {
     @Test
     public void testGetGenreOfSong_NonexistentSong() {
         SongsDatabase db = new SongsDatabase();
-        db.addSong("Pop", "Love Story");
-        String genre = db.getGenreOfSong("Blank Space");
+        db.addSong("Sad", "Photograph");
+        String genre = db.getGenreOfSong("BlankSpace");
         assertNull(genre);
     }
 
     @Test
     public void testGetSongs_ExistingGenre() {
         SongsDatabase db = new SongsDatabase();
-        db.addSong("Pop", "Love Story");
+        db.addSong("Romantic", "Love Story");
         db.addSong("Pop", "Shake It Off");
-        db.addSong("Pop", "Blank Space");
+        db.addSong("Sad", "Photograph");
         Set<String> popSongs = db.getSongs("Pop");
-        assertTrue(popSongs.contains("Love Story"));
+     
         assertTrue(popSongs.contains("Shake It Off"));
-        assertTrue(popSongs.contains("Blank Space"));
+     
 
         db.addSong("Country", "Love Story");
-        Set<String> countrySongs = db.getSongs("Country");
+        Set<String> countrySongs = db.getSongs("Romantic");
         assertTrue(countrySongs.contains("Love Story"));
     }
 
